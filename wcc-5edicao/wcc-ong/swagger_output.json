@@ -1,0 +1,839 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "REST API",
+    "description": ""
+  },
+  "host": "localhost:3000",
+  "basePath": "/",
+  "tags": [],
+  "schemes": [
+    "http"
+  ],
+  "consumes": [],
+  "produces": [],
+  "paths": {
+    "/ong": {
+      "post": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "post ong object",
+            "in": "body",
+            "description": "New ong values",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "example": "new ong"
+                },
+                "description": {
+                  "type": "string",
+                  "example": "ong description"
+                },
+                "email": {
+                  "type": "string",
+                  "example": "aaa@aaa.com"
+                },
+                "phone": {
+                  "type": "string",
+                  "example": "(19) 99999-9999"
+                }
+              },
+              "required": [
+                "name",
+                "description",
+                "email",
+                "phone"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      },
+      "get": {
+        "tags": [],
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      }
+    },
+    "/ong/{id}": {
+      "get": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {}
+      },
+      "put": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "put ong object",
+            "in": "body",
+            "description": "New ong values",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "example": "new ong"
+                },
+                "description": {
+                  "type": "string",
+                  "example": "ong description"
+                },
+                "email": {
+                  "type": "string",
+                  "example": "aaa@aaa.com"
+                },
+                "phone": {
+                  "type": "string",
+                  "example": "(19) 99999-9999"
+                }
+              },
+              "required": [
+                "name",
+                "description",
+                "email",
+                "phone"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      },
+      "delete": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/veterinario": {
+      "post": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "post vet object",
+            "in": "body",
+            "description": "New vet values",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "nome": {
+                  "type": "string",
+                  "example": "Tobias Carvalho"
+                },
+                "crmv": {
+                  "type": "string",
+                  "example": "1234567"
+                },
+                "cpf": {
+                  "type": "string",
+                  "example": "12345678910"
+                },
+                "email": {
+                  "type": "string",
+                  "example": "exemplo@exemplo.com"
+                },
+                "telefone": {
+                  "type": "string",
+                  "example": "(19) 99999-9999"
+                }
+              },
+              "required": [
+                "nome",
+                "crmv",
+                "cpf",
+                "email",
+                "telefone"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      },
+      "get": {
+        "tags": [],
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      }
+    },
+    "/veterinario/{id}": {
+      "get": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {}
+      },
+      "put": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "put vet object",
+            "in": "body",
+            "description": "Update vet values",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "nome": {
+                  "type": "string",
+                  "example": "Tobias Carvalho"
+                },
+                "crmv": {
+                  "type": "string",
+                  "example": "1234567"
+                },
+                "cpf": {
+                  "type": "string",
+                  "example": "12345678910"
+                },
+                "email": {
+                  "type": "string",
+                  "example": "exemplo@exemplo.com"
+                },
+                "telefone": {
+                  "type": "string",
+                  "example": "(19) 99999-9999"
+                }
+              },
+              "required": [
+                "nome",
+                "crmv",
+                "cpf",
+                "email",
+                "telefone"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      },
+      "delete": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/gatos": {
+      "post": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "post gatos object",
+            "in": "body",
+            "description": "New Felino values",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "tipo": {
+                  "type": "string",
+                  "example": "gato"
+                },
+                "status": {
+                  "type": "string",
+                  "example": "adotado"
+                },
+                "corPelagem": {
+                  "type": "string",
+                  "example": "color"
+                },
+                "possuiDeficiencia": {
+                  "type": "string",
+                  "example": "no"
+                },
+                "cuidadosEspeciais": {
+                  "type": "string",
+                  "example": "no"
+                },
+                "sexo": {
+                  "type": "string",
+                  "example": "macho"
+                },
+                "idade": {
+                  "type": "string",
+                  "example": "filhote"
+                },
+                "castrado": {
+                  "type": "string",
+                  "example": "no"
+                },
+                "name": {
+                  "type": "string",
+                  "example": "Zeus"
+                },
+                "teste": {
+                  "type": "string",
+                  "example": "não realizado"
+                },
+                "vacinas": {
+                  "type": "string",
+                  "example": "sim"
+                }
+              },
+              "required": [
+                "tipo",
+                "corPelagem",
+                "sexo",
+                "idade",
+                "castrado",
+                "teste",
+                "vacinas"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      },
+      "get": {
+        "tags": [],
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      }
+    },
+    "/gatos/{id}/status": {
+      "put": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "put gatos object",
+            "in": "body",
+            "description": "Update adoption cat",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "status": {
+                  "type": "string",
+                  "example": "disponivel"
+                }
+              },
+              "required": [
+                "status"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/gatos/{status}": {
+      "get": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "status",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/gatos/{id}": {
+      "put": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "put cat object",
+            "in": "body",
+            "description": "New cat values",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "tipo": {
+                  "type": "string",
+                  "example": "gato"
+                },
+                "status": {
+                  "type": "string",
+                  "example": "adotado"
+                },
+                "corPelagem": {
+                  "type": "string",
+                  "example": "color"
+                },
+                "possuiDeficiencia": {
+                  "type": "string",
+                  "example": "no"
+                },
+                "cuidadosEspeciais": {
+                  "type": "string",
+                  "example": "no"
+                },
+                "sexo": {
+                  "type": "string",
+                  "example": "macho"
+                },
+                "idade": {
+                  "type": "string",
+                  "example": "filhote"
+                },
+                "castrado": {
+                  "type": "string",
+                  "example": "no"
+                },
+                "name": {
+                  "type": "string",
+                  "example": "Zeus"
+                },
+                "teste": {
+                  "type": "string",
+                  "example": "não realizado"
+                },
+                "vacinas": {
+                  "type": "string",
+                  "example": "sim"
+                }
+              },
+              "required": [
+                "tipo",
+                "corPelagem",
+                "sexo",
+                "idade",
+                "castrado",
+                "teste",
+                "vacinas"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      },
+      "delete": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/dog": {
+      "post": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "post dog object",
+            "in": "body",
+            "description": "New dog values",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "tipo": {
+                  "type": "string",
+                  "example": "maltes"
+                },
+                "nome": {
+                  "type": "string",
+                  "example": "zeus"
+                },
+                "status": {
+                  "type": "string",
+                  "example": "disponivel para adocao"
+                },
+                "possuiDeficiencia": {
+                  "type": "string",
+                  "example": "nao"
+                },
+                "cuidadosEspeciais": {
+                  "type": "string",
+                  "example": "nao"
+                },
+                "corPelagem": {
+                  "type": "string",
+                  "example": "preto"
+                },
+                "sexo": {
+                  "type": "string",
+                  "example": "masculino"
+                },
+                "idade": {
+                  "type": "string",
+                  "example": "7 meses"
+                },
+                "castrado": {
+                  "type": "string",
+                  "example": "sim"
+                },
+                "teste": {
+                  "type": "string",
+                  "example": "teste"
+                },
+                "vacinas": {
+                  "type": "string",
+                  "example": "raiva"
+                }
+              },
+              "required": [
+                "tipo",
+                "nome",
+                "status",
+                "possuiDeficiencia",
+                "cuidadosEspeciais",
+                "corPelagem",
+                "sexo",
+                "idade",
+                "castrado",
+                "teste",
+                "vacinas"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      },
+      "get": {
+        "tags": [],
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      }
+    },
+    "/dog/{id}": {
+      "get": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {}
+      },
+      "put": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "put dog object",
+            "in": "body",
+            "description": "update dog values",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "tipo": {
+                  "type": "string",
+                  "example": "maltes"
+                },
+                "nome": {
+                  "type": "string",
+                  "example": "zeus"
+                },
+                "status": {
+                  "type": "string",
+                  "example": "disponivel para adocao"
+                },
+                "possuiDeficiencia": {
+                  "type": "string",
+                  "example": "nao"
+                },
+                "cuidadosEspeciais": {
+                  "type": "string",
+                  "example": "nao"
+                },
+                "corPelagem": {
+                  "type": "string",
+                  "example": "preto"
+                },
+                "sexo": {
+                  "type": "string",
+                  "example": "masculino"
+                },
+                "idade": {
+                  "type": "string",
+                  "example": "7 meses"
+                },
+                "castrado": {
+                  "type": "string",
+                  "example": "sim"
+                },
+                "teste": {
+                  "type": "string",
+                  "example": "teste"
+                },
+                "vacinas": {
+                  "type": "string",
+                  "example": "raiva"
+                }
+              },
+              "required": [
+                "tipo",
+                "nome",
+                "status",
+                "possuiDeficiencia",
+                "cuidadosEspeciais",
+                "corPelagem",
+                "sexo",
+                "idade",
+                "castrado",
+                "teste",
+                "vacinas"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      },
+      "delete": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/user": {
+      "post": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "post user object",
+            "in": "body",
+            "description": "New user values",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "username": {
+                  "type": "string",
+                  "example": "user name"
+                },
+                "name": {
+                  "type": "string",
+                  "example": "new user"
+                },
+                "email": {
+                  "type": "string",
+                  "example": "aaa@aaa.com.br"
+                },
+                "password": {
+                  "type": "string",
+                  "example": "password"
+                }
+              },
+              "required": [
+                "username",
+                "name",
+                "email",
+                "password"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      },
+      "get": {
+        "tags": [],
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      }
+    },
+    "/user/{id}": {
+      "get": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {}
+      },
+      "put": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "put user object",
+            "in": "body",
+            "description": "New user values",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "username": {
+                  "type": "string",
+                  "example": "user name"
+                },
+                "name": {
+                  "type": "string",
+                  "example": "new user"
+                },
+                "email": {
+                  "type": "string",
+                  "example": "aaa@aaa.com.br"
+                },
+                "password": {
+                  "type": "string",
+                  "example": "password"
+                }
+              },
+              "required": [
+                "username",
+                "name",
+                "email",
+                "password"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      },
+      "delete": {
+        "tags": [],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {}
+      }
+    }
+  },
+  "definitions": {}
+}
